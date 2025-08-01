@@ -11,7 +11,7 @@ app.use(express.json());
 app.get('/api/gold-rate', (req, res) => {
     const rates = {
         "22K": "₹5,200/10gm",
-        "24K": "₹5,650/10gm",
+        "24K": "₹5,750/10gm",
         lastUpdated: new Date().toISOString()
     };
     res.json(rates);
