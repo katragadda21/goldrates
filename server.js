@@ -6,7 +6,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-
+app.use(axios());
 // Mock Gold Rate API
 app.get('/api/gold-rate', (req, res) => {
     const rates = {
@@ -21,3 +21,4 @@ const PORT = 5000;
 app.listen(PORT, () => 
     console.log(`Gold Rate API running on http://localhost:${PORT}`)
 );
+
