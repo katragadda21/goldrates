@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-const app = express();
 
 // Middleware
 app.use(cors());
@@ -21,4 +20,5 @@ const PORT = 5000;
 app.listen(PORT, () => 
     console.log(`Gold Rate API running on http://localhost:${PORT}`)
 );
+
 
