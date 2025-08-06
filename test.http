@@ -1,2 +1,2 @@
-get goldrate axios
+GET goldrate axios
 GET http://localhost:5000/api/gold-rate
