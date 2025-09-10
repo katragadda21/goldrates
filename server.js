@@ -10,7 +10,7 @@ app.use(axios());
 app.get('/api/gold-rate', (req, res) => {
     const rates = {
         "22K": "₹5,200/10gm",
-        "24K": "₹5,750/10gm",
+        "24K": "₹5,950/10gm",
         lastUpdated: new Date().toISOString()
     };
     res.json(rates);
@@ -20,5 +20,6 @@ const PORT = 5000;
 app.listen(PORT, () => 
     console.log(`Gold Rate API running on http://localhost:${PORT}`)
 );
+
 
 
